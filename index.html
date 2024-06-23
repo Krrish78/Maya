@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0a74da; /* Change this color if needed */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        /* Add more styles as needed */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Maya - SuperBot</h1>
+        <button class="about-button" onclick="document.getElementById('about').style.display='block'">About the creator</button>
+    </header>
+    <div id="about" style="display:none; padding: 20px; background-color: white; width: 80%; max-width: 800px; margin-top: 20px;">
+        <h2>About the creator</h2>
+        <p>Name: Krish Shrivastava</p>
+        <p>Date of Birth: April 27, 2005</p>
+        <p>Education: Undergraduate student pursuing a Bachelor of Business Administration (BBA)</p>
+        <p>Copyright Disclaimer© 2024</p>
+        <p>All rights reserved. This website and the GPT-2 Neo robot are protected by copyright laws. Unauthorized use, reproduction, or distribution of any part of this website or the GPT-2 Neo robot without explicit permission from the creator is strictly prohibited.</p>
+    </div>
+    <div class="content">
+        <iframe src="https://huggingface.co/spaces/Krish778/Krish" width="100%" height="600"></iframe>
+    </div>
+    <div class="input-container">
+        <textarea id="user-input" placeholder="Type your message here..."></textarea>
+        <button onclick="sendMessage()">Send</button>
+    </div>
+    <div id="response" class="response-container"></div>
+    <script>
+        function sendMessage() {
+            var userInput = document.getElementById('user-input').value;
+            var responseContainer = document.getElementById('response');
+            responseContainer.innerHTML = 'Thinking...';
+
+            // Add your JavaScript logic here for handling messages
+        }
+    </script>
+</body>
+</html>
